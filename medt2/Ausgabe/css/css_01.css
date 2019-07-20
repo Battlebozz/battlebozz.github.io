@@ -1,0 +1,111 @@
+html {
+    background-color: ghostwhite;
+}
+
+p {
+    display: inline;
+}
+
+.arguments {
+    display: inline-flex;
+    flex-flow: column nowrap;
+    background-color: lightseagreen;
+    border: white groove;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    z-index: 100;
+}
+
+.button {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.item {
+    box-sizing: border-box;
+    padding: 1em;
+    margin: 1em;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 1em;
+    text-align: right;
+}
+
+.execute {
+    margin: 1em;
+}
+
+.put {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    resize: none;
+    overflow: auto;
+    position: relative;
+}
+
+.exe {
+    width: auto;
+}
+
+.actions {
+    position: relative;
+    display: inline-flex;
+    flex-flow: column nowrap;
+    background-color: #DF0101;
+    z-index: 1;
+    border: black dotted;
+    justify-content: space-between;
+    align-items: right;
+    margin-left: auto;
+    margin-right: 0;
+    max-width: 50%;
+}
+
+#aSplice, #cSplice, #aSlice, #cSlice {
+    width: 2em;
+}
+
+#dSplice {
+    width: 10em;
+}
+
+footer {
+    justify-content: center;
+    position: fixed;
+}
+
+.move-vertical:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 2px; }
+.move-vertical:hover:after, .move-vertical:focus:after {
+    width: 100%;
+    height: 3px; }
+.move-vertical:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 2px; }
+.move-vertical:hover:before, .move-vertical:focus:before {
+    width: 100%;
+    height: 3px; }
+.move-vertical:after {
+    top: 50%;
+    left: 0; }
+.move-vertical:hover:after {
+    top: 0; }
+.move-vertical:before {
+    bottom: 50%;
+    left: 0; }
+.move-vertical:hover:before {
+    bottom: 0; }

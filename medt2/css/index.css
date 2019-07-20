@@ -1,0 +1,53 @@
+* {
+
+}
+
+html {
+    background-color: hsl(33, 100%, 50%);
+}
+
+h1 {
+    font-family: "GeoSans", sans-serif;
+    background-color: hsl(0, 100%, 50%);
+    display: inline-block;
+}
+
+li {
+    list-style-type: none;
+    font-family: "Poiret One",sans-serif;
+    src: url("../fonts/PoiretOne-Regular.ttf");
+    font-size: 1.5em;
+    background-color: hsl(0, 0%, 50%);
+    display: inline;
+    margin: .5em;
+    color: black;
+}
+
+.move-vertical:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 2px; }
+.move-vertical:hover:after, .move-vertical:focus:after {
+    width: 100%;
+    height: 3px; }
+.move-vertical:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 2px; }
+.move-vertical:hover:before, .move-vertical:focus:before {
+    width: 100%;
+    height: 3px; }
+.move-vertical:after {
+    top: 50%;
+    left: 0; }
+.move-vertical:hover:after {
+    top: 0; }
+.move-vertical:before {
+    bottom: 50%;
+    left: 0; }
+.move-vertical:hover:before {
+    bottom: 0; }

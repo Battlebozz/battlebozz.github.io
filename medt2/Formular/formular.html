@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Anmeldeformular</title>
+    <link rel="stylesheet" type="text/css" href="css/css_01.css">
+    <link rel="stylesheet" type="text/css" href="../General/normalize.css">
+</head>
+<body>
+<div id="container">
+    <form id="frm1" name="frm1">
+        <div class="container2">
+            <div class="holeW">
+                <h1>Registrierung:</h1>
+                <div class="container2">
+                    <div class="Eingabefenster">
+
+                        <p>
+                            <label for="fname">Vorname</label>
+                            <input type="text" name="fname" id="fname" value="" placeholder="Max">
+                        </p>
+                        <p>
+                            <label for="lname">Nachname</label>
+                            <input type="text" name="lname" id="lname" value="" placeholder="Mustermann">
+                        </p>
+                        <p>
+                            <label for="postleitzahl">Postleitzahl</label>
+                            <input type="text" name="postleitzahl" id="postleitzahl" value="" placeholder="1111">
+                        </p>
+                        <p id="Bundesland" onclick="getPostleitzahlName()">Bundesland</p>
+
+                        <p>
+                            <label for="Password1">Password</label>
+                            <input type="password" name="Password1" id="Password1" value=""
+                                   placeholder="Mindestens 6 Zeichen lang"></p>
+                        <p>
+                            <label for="Password2">Password wiederholen</label>
+                            <input type="password" name="Password2" id="Password2" value=""
+                                   placeholder=""></p>
+                    </div>
+
+                </div>
+                <p>
+                    <label for="bankname">Bank</label> <input type="text" name="snamebankname" id="bankname"
+                                                              value=""
+                                                              placeholder="Erste Bank">
+                </p>
+                <p>
+                    <label for="kreditkartennummer">Kreditkartennummer</label>
+                    <input type="text"
+                           name="kreditkartennummer"
+                           id="kreditkartennummer"
+                           value=""
+                           placeholder="123 4567 8901 2345 6789">
+                </p>
+                <div class="Eingabefenster">
+                    <div id="Bestellung">
+                        <h2>Bestellung:</h2>
+
+                        <div id="checkboxes">
+
+                            <label for="Pizza" id="Pizzalabel">Pizza</label>
+                            <input type="checkbox" name="Pizza"
+                                   id="Pizza"
+                                   class="checkbox1">
+                            <br>
+
+                            <div><label for="Mozarella" id="Mozarellalabel">Mozarella</label>
+                                <input type="checkbox"
+                                       name="Mozarella"
+                                       id="Mozarella"
+                                       class="checkbox1"></div>
+                            <div><label for="Tomaten" id="Tomatenlabel">Tomaten</label>
+                                <input type="checkbox"
+                                       name="Tomaten"
+                                       id="Tomaten"
+                                       class="checkbox1"></div>
+                            <div><label for="Mais" id="Maislabel">Mais</label>
+                                <input type="checkbox"
+                                       name="Mais"
+                                       id="Mais"
+                                       class="checkbox1"
+                                       style="margin-bottom: 15px">
+                            </div>
+                            <br><br>
+                            <label for="Schnitzel" id="Schnitzellabel">Schnitzel</label>
+                            <input type="checkbox"
+                                   name="Schnitzel"
+                                   id="Schnitzel"
+                                   class="checkbox2">
+                            <br><br>
+                            <label for="Burger"
+                                   id="Burgerlabel">Burger</label><input
+                                type="checkbox"
+                                name="Burger"
+                                id="Burger"
+                                class="checkbox3">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button id="submit" type="button">Kostenpflichtig Bestellung absenden</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="JavaScript/formular_01.js"></script>
+</body>
+</html>

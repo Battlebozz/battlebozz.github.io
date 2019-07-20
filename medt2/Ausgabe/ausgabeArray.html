@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Ausgabe Array</title>
+    <link href="../General/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/css_01.css" rel="stylesheet" type="text/css">
+    <link href="../General/w3.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="arguments">
+    <div class="w3-container w3-green">
+        <h2>Array Methoden</h2>
+        <label>Input</label>
+        <textarea type="text" name="input" id="input" class="put w3-input"
+                  placeholder="Insert your input-string here!"
+                  cols="30"
+                  rows="5"></textarea>
+        <button class="w3-button w3-black execute exe" id="execute">Start</button>
+        <button class="w3-button w3-black execute exe" id="clear">Clear</button>
+        <br>
+        <label>Output</label>
+        <textarea type="text" name="output" class="put w3-input" placeholder="Your refactored input-string!"
+                  cols="30"
+                  rows="5" id="output"></textarea>
+    </div>
+</div>
+<div align="right">
+    <div class="actions">
+        <div class="item">
+            <button class="button w3-button w3-black" id="bSort">
+                Sort
+            </button>
+        </div>
+        <div class="item">
+            <button class="button w3-button w3-black" id="bShift">
+                Shift
+            </button>
+        </div>
+        <div class="item">
+            <button class="button w3-button w3-black" id="bPop">
+                Pop
+            </button>
+        </div>
+        <div class="item">
+            <button class="button w3-button w3-black" id="bLength">
+                Length
+            </button>
+        </div>
+        <div class="item">
+            <input type=number id="aSplice" placeholder="I">
+            <input type=number id="cSplice" placeholder="D">
+            <input type=text id="dSplice" placeholder="Elements to add">
+            <button class="button w3-button w3-black" id="bSplice">
+                Splice
+            </button>
+        </div>
+        <div class="item">
+            <input type=number id="cSlice">
+            <input type=number id="aSlice">
+            <button class="button w3-button w3-black" id="bSlice">
+                Slice
+            </button>
+        </div>
+        <div class="item">
+            <input type=text id="aPush">
+            <button class="button w3-button w3-black" id="bPush">
+                Push
+            </button>
+        </div>
+        <div class="item">
+            <input type=text id="aConcat">
+            <button class="button w3-button w3-black" id="bConcat">
+                Concat
+            </button>
+        </div>
+        <div class="item">
+            <input type=text id="aIndexOf">
+            <button class="button w3-button w3-black" id="bIndexOf">
+                IndexOf
+            </button>
+        </div>
+        <div class="item">
+            <input type=text id="aLastIndexOf">
+            <button class="button w3-button w3-black" id="bLastIndexOf">
+                LastIndexOf
+            </button>
+        </div>
+        <div class="item">
+            <input type=text id="aIncludes">
+            <button class="button w3-button w3-black" id="bIncludes">
+                Includes
+            </button>
+        </div>
+        <div class="item">
+            <button class="button w3-button w3-black" id="bMap">
+                Map/Length of each element
+            </button>
+        </div>
+        <div class="item">
+            <button class="button w3-button w3-black" id="bSortReverse">
+                SortReverse
+            </button>
+        </div>
+        <div class="item">
+            <button class="button w3-button w3-black" id="bReverse">
+                Reverse
+            </button>
+        </div>
+    </div>
+</div>
+<script src="JavaScript/array.js"></script>
+<footer><img src="../Pics/home.png"></footer>
+</body>
+</html>
