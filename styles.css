@@ -1,6 +1,8 @@
 .portfolio-header {
   position: relative;
-  background-image: url(images/header-bg.jpg);
+  background-image: url("https://wallpaperplay.com/walls/full/6/4/3/99674.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .portfolio-header .mdl-layout__header-row {
